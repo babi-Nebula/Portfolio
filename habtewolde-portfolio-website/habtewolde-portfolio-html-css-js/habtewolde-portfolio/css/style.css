@@ -421,6 +421,7 @@
     .skill:nth-child(2) .skill-mark { color:#dc7040; }
     .skill:nth-child(3) .skill-mark { color:#2c91b8; }
     .skill:nth-child(4) .skill-mark { color:#c64d71; }
+    .skill:nth-child(5) .skill-mark { color:#d5a500; }
     .skill small { font:700 8px var(--mono); letter-spacing:.08em; text-transform:uppercase; }
     .skill-caption { font:9px/1.5 var(--mono); color:var(--muted); margin:12px 0 0; }
 
@@ -787,7 +788,7 @@
       .intro { grid-template-columns: minmax(180px, .72fr) minmax(0, 1.4fr); gap:22px; }
       .masthead h1 { font-size: clamp(72px, 12vw, 140px); }
       .skills { grid-column:1/-1; padding-top:0; }
-      .skill-grid { grid-template-columns:repeat(4,1fr); }
+      .skill-grid { grid-template-columns:repeat(auto-fit,minmax(90px,1fr)); }
       .skill { min-height:60px; }
       .skill-mark { font-size:20px; }
       .skill-caption { margin-top:8px; }
@@ -799,7 +800,7 @@
       :root { --page: min(calc(100% - 38px), 650px); }
       .intro { grid-template-columns: minmax(145px,.72fr) minmax(0,1.4fr); gap:20px; }
       .skills { grid-column:1/-1; padding-top:0; }
-      .skill-grid { grid-template-columns:repeat(4,1fr); }
+      .skill-grid { grid-template-columns:repeat(auto-fit,minmax(90px,1fr)); }
       .skill { min-height:60px; }
       .skill-mark { font-size:20px; }
       .skill-caption { margin-top:8px; }
