@@ -107,7 +107,8 @@ function triggerMorphTransition(targetSelector) {
   const target = document.querySelector(targetSelector);
   if (!target) return;
 
-  target.scrollIntoView({ behavior: "smooth", block: "start" });
+  const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+  target.scrollIntoView({ behavior, block: "start" });
   if (window.history && window.history.pushState) {
     const existingHash = window.location.hash;
     if (existingHash !== targetSelector) {
@@ -129,17 +130,6 @@ if (menuToggle && navLinks) {
     setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
   });
 
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
-      if (href && href.startsWith("#")) {
-        event.preventDefault();
-        setMenuOpen(false);
-        triggerMorphTransition(href);
-      }
-    });
-  });
-
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") setMenuOpen(false);
   });
@@ -151,6 +141,7 @@ anchorLinks.forEach((link) => {
     const href = link.getAttribute("href");
     if (!href || !href.startsWith("#") || href === "#") return;
     event.preventDefault();
+    if (navLinks && navLinks.contains(link)) setMenuOpen(false);
     triggerMorphTransition(href);
   });
 });
