@@ -11,16 +11,16 @@ const SITE_CONFIG = {
 // 2) Showcase each project video from the assets folder.
 // Supported video links: YouTube, Vimeo, or a direct .mp4 file in this project.
 const PROJECTS = [
-  { title: "Amy Hair Salon", type: "Brand edit · Beauty story", description: "", videoUrl: "assets/Amy hair salon re edited.mp4" },
-  { title: "Aqua UNO", type: "Amharic social reel", description: "", videoUrl: "assets/Aqua UNO Amharic.mp4" },
-  { title: "Dr Mustefa", type: "Re-edited feature clip", description: "", videoUrl: "assets/Dr mustefa re edited.mp4" },
-  { title: "Dunamis 1", type: "Brand showcase", description: "", videoUrl: "assets/dunamis 1.mp4" },
-  { title: "Dunamis Oro", type: "Promotional edit", description: "", videoUrl: "assets/Dunamis oro.mp4" },
-  { title: "Gebeta 3", type: "4K campaign video", description: "", videoUrl: "assets/Gebeta 3 4k.mp4" },
-  { title: "Gebeta Re-edit", type: "Creative refinement", description: "", videoUrl: "assets/Gebeta reee edited.mp4" },
-  { title: "Lebustar", type: "Short-form social cut", description: "", videoUrl: "assets/Lebustar 1 Re-edited.mp4" },
-  { title: "RAW Bryan", type: "Raw footage edit", description: "", videoUrl: "assets/RAW BRYAN.mp4" },
-  { title: "Sebriya", type: "Social media highlight", description: "", videoUrl: "assets/Sebriya 1.mp4" }
+  { title: "Amy Hair Salon", type: "Brand edit · Beauty story", description: "", videoUrl: "assets/portfolio/amy-hair-salon.mp4" },
+  { title: "Aqua UNO", type: "Amharic social reel", description: "", videoUrl: "assets/portfolio/aqua-uno.mp4" },
+  { title: "Dr Mustefa", type: "Re-edited feature clip", description: "", videoUrl: "assets/portfolio/dr-mustefa.mp4" },
+  { title: "Dunamis 1", type: "Brand showcase", description: "", videoUrl: "assets/portfolio/dunamis-1.mp4" },
+  { title: "Dunamis Oro", type: "Promotional edit", description: "", videoUrl: "assets/portfolio/dunamis-oro.mp4" },
+  { title: "Gebeta 3", type: "4K campaign video", description: "", videoUrl: "assets/portfolio/gebeta-3.mp4" },
+  { title: "Gebeta Re-edit", type: "Creative refinement", description: "", videoUrl: "assets/portfolio/gebeta-re-edit.mp4" },
+  { title: "Lebustar", type: "Short-form social cut", description: "", videoUrl: "assets/portfolio/lebustar.mp4" },
+  { title: "RAW Bryan", type: "Raw footage edit", description: "", videoUrl: "assets/portfolio/raw-bryan.mp4" },
+  { title: "Sebriya", type: "Social media highlight", description: "", videoUrl: "assets/portfolio/sebriya.mp4" }
 ];
 
 const byId = (id) => document.getElementById(id);

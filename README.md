@@ -42,3 +42,5 @@ Your portrait is included at `assets/habtewolde-bizuayhu.jpg`. Replace that file
 
 ## Publish
 This is a static website. You can host the complete folder on GitHub Pages, Netlify, or another static web host. Keep the `css`, `js`, `assets` and `videos` folders alongside `index.html`.
+
+For Vercel, deploy the project root without a build command. The source videos in `assets` are excluded from deployments by `.vercelignore`; the smaller browser-ready project previews are stored in `assets/portfolio`.
